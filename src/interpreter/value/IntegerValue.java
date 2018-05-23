@@ -10,6 +10,7 @@ public class IntegerValue extends Value<Integer> {
         this.value = value;
     }
 
+    @Override
     public Integer value() {
         return value;
     }

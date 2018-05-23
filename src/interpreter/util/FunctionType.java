@@ -11,6 +11,7 @@ public enum FunctionType {
     Abort,
     Type,
     Length,
-    Substring
+    Substring,
+    Clone
 
 }

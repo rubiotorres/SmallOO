@@ -20,6 +20,7 @@ public class CommandsBlock extends Command {
         cmds.add(c);
     }
 
+    @Override
     public void execute(Instance self, Arguments args) {
         for (Command c : cmds)
             c.execute(self, args);

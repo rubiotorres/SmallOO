@@ -5,7 +5,6 @@ public enum TokenType {
     INVALID_TOKEN,
     UNEXPECTED_EOF,
     END_OF_FILE,
-
     // symbols
     OPEN_CUR,
     CLOSE_CUR,
@@ -15,7 +14,6 @@ public enum TokenType {
     OPEN_PAR,
     COMMA,
     CLOSE_PAR,
-    
     // keywords
     IF,
     ELSE,
@@ -25,7 +23,6 @@ public enum TokenType {
     SYSTEM,
     SELF,
     ARGS,
-    
     // operators
     NOT,
     AND,
@@ -41,12 +38,10 @@ public enum TokenType {
     MULT,
     DIV,
     MOD,
-    
     // others
-    
+
     NAME,
     NUMBER,
     STRING,
-    
 
 };

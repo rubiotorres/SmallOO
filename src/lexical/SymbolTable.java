@@ -11,25 +11,25 @@ class SymbolTable {
         st = new HashMap<String, TokenType>();
         
         // symbols
-        st.put("{",TokenType.OPEN_CUR);
-        st.put("}",TokenType.CLOSE_CUR);
-        st.put(";",TokenType.DOT_COMMA);
-        st.put(".",TokenType.DOT);
-        st.put("=",TokenType.ASSIGN);
-        st.put("(",TokenType.OPEN_PAR);
-        st.put(",",TokenType.COMMA);
-        st.put(")",TokenType.CLOSE_PAR);
-        
+        st.put("{", TokenType.OPEN_CUR);
+        st.put("}", TokenType.CLOSE_CUR);
+        st.put(";", TokenType.DOT_COMMA);
+        st.put(".", TokenType.DOT);
+        st.put("=", TokenType.ASSIGN);
+        st.put("(", TokenType.OPEN_PAR);
+        st.put(")", TokenType.CLOSE_PAR);
+        st.put(",", TokenType.COMMA);
+
         // keywords
         st.put("if", TokenType.IF);
         st.put("else", TokenType.ELSE);
         st.put("while", TokenType.WHILE);
         st.put("function", TokenType.FUNCTION);
-        st.put("return",TokenType.RETURN);
-        st.put("system",TokenType.SYSTEM);
+        st.put("return", TokenType.RETURN);
+        st.put("system", TokenType.SYSTEM);
         st.put("self", TokenType.SELF);
         st.put("args", TokenType.ARGS);
-        
+
         // operators
         st.put("!", TokenType.NOT);
         st.put("&", TokenType.AND);
@@ -37,8 +37,8 @@ class SymbolTable {
         st.put("==", TokenType.EQUAL);
         st.put("!=", TokenType.DIFF);
         st.put("<", TokenType.LOWER);
-        st.put("<=", TokenType.LOWER_EQ);
         st.put(">", TokenType.GREATER);
+        st.put("<=", TokenType.LOWER_EQ);
         st.put(">=", TokenType.GREATER_EQ);
         st.put("+", TokenType.ADD);
         st.put("-", TokenType.SUB);

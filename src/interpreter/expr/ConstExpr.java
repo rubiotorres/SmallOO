@@ -13,6 +13,7 @@ public class ConstExpr extends Expr {
         this.value = value;
     }
 
+    @Override
     public Value<?> rhs(Instance self, Arguments args) {
         return value;
     }

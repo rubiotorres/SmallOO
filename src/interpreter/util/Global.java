@@ -12,7 +12,8 @@ public class Global extends Memory {
         system.setValue("print", new FunctionValue(new SpecialFunction(FunctionType.Print)));
         system.setValue("println", new FunctionValue(new SpecialFunction(FunctionType.Println)));
         system.setValue("read", new FunctionValue(new SpecialFunction(FunctionType.Read)));
-        // Add the others.
+        system.setValue("random", new FunctionValue(new SpecialFunction(FunctionType.Random)));
+        system.setValue("clone", new FunctionValue(new SpecialFunction(FunctionType.Clone)));
 
         this.setValue("system", new InstanceValue(system));
     }

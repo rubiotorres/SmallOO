@@ -14,6 +14,7 @@ public class AccessExpr extends Expr {
         this.path = path;
     }
 
+    @Override
     public Value<?> rhs(Instance self, Arguments args) {
         return path.getValue(self, args);
     }

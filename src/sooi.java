@@ -1,11 +1,12 @@
-import lexical.Lexeme;
+
+
 import lexical.LexicalAnalysis;
 import lexical.TokenType;
-import lexical.LexicalException;
 
 import syntatic.SyntaticAnalysis;
 
 import interpreter.command.Command;
+import lexical.Lexeme;
 
 public class sooi {
 
@@ -16,17 +17,17 @@ public class sooi {
         }
 
         try (LexicalAnalysis l = new LexicalAnalysis(args[0])) {
-            SyntaticAnalysis s = new SyntaticAnalysis(l);
-
+            
             // O código a seguir é dado para testar o interpretador.
             // TODO: descomentar depois que o analisador léxico estiver OK.
             
+            SyntaticAnalysis s = new SyntaticAnalysis(l);
             Command c = s.start();
-            c.execute(null,null);
-           
-/*
+            c.execute(null, null);
+            
             // O código a seguir é usado apenas para testar o analisador léxico.
             // TODO: depois de pronto, comentar o código abaixo.
+            /*
             Lexeme lex;
             while (checkType((lex = l.nextToken()).type)) {
                 System.out.printf("(\"%s\", %s)\n", lex.token, lex.type);
@@ -43,10 +44,9 @@ public class sooi {
                     System.out.printf("(\"%s\", %s)\n", lex.token, lex.type);
                     break;
             }
-*/
+            */
         } catch (Exception e) {
             System.err.println("Internal error: " + e.getMessage());
-            e.printStackTrace();
         }
     }
 

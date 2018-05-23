@@ -10,6 +10,7 @@ public abstract class Expr extends Rhs {
         super(line);
     }
 
+    @Override
     public abstract Value<?> rhs(Instance self, Arguments args);
 
 }
